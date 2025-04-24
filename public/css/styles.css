@@ -102,3 +102,23 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 0 40px #00ffcc66;
 }
+
+.vault-container {
+  text-align: center;
+  padding: 2em;
+}
+
+.vault-actions {
+  margin: 1em 0;
+}
+
+#vaultPassword, #fileInput {
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 60%;
+  max-width: 300px;
+}
+
+button {
+  margin: 0.5em;
+}
