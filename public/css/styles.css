@@ -1,11 +1,17 @@
+/* General Body Styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0f172a;
-  color: #f8fafc;
   margin: 0;
   padding: 0;
+  font-family: 'Orbitron', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Combined font stack */
+  background: #0f172a; /* Darker background from second block */
+  color: #f8fafc; /* Slightly softer white text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+/* Header Styling */
 header {
   background-color: #1e293b;
   padding: 20px;
@@ -16,6 +22,7 @@ header img {
   width: 50px;
 }
 
+/* Main and Section Styling */
 main {
   padding: 20px;
 }
@@ -27,16 +34,30 @@ section {
   border-radius: 8px;
 }
 
-input, button {
-  margin: 5px 0;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
+/* Login Container Styling */
+.login-container {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0 0 30px #00ffcc44;
 }
 
+/* Inputs and Buttons */
+input, button {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Button Styles */
 button {
-  background-color: #3b82f6;
+  background-color: #3b82f6; /* From second block */
   color: #fff;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -44,6 +65,7 @@ button:hover {
   background-color: #2563eb;
 }
 
+/* Footer */
 footer {
   background-color: #1e293b;
   text-align: center;
