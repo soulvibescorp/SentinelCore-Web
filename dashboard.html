@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <script>
+  if (!localStorage.getItem("sentinel_user")) {
+    window.location.href = "login.html";
+  }
+</script>
+
   <nav class="nav-bar">
     <h2>🛡️ SentinelCore</h2>
     <button onclick="logout()">Logout</button>
