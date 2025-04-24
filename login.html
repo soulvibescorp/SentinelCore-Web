@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SentinelCore – Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="login-container">
+    <h2>🔐 SentinelCore Secure Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="loginMsg"></p>
+  </main>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const msg = document.getElementById("loginMsg");
+
+      // Static mock auth (replace with Firebase later)
+      if (user === "admin" && pass === "sentinel123") {
+        localStorage.setItem("sentinel_user", user);
+        window.location.href = "dashboard.html";
+      } else {
+        msg.innerText = "Access Denied ❌";
+      }
+    }
+  </script>
+</body>
+</html>
